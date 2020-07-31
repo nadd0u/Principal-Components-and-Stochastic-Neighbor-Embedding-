@@ -10,7 +10,14 @@ subtitle: MSDS 411
 ---
 
 ```{r setup, include=FALSE}
-my.data <- read.csv(file="file:///Users/nadianoui-mehidi/Desktop/stockdata.csv",head=TRUE,sep=",")
+
+#"/Users/nadianoui-mehidi/Cluster-Analysis"
+dir.create("raw_data")
+file.copy("stockdata.csv", "raw_data")
+library(readr)
+my.data <- read.csv("raw_data/stockdata.csv")
+
+
 ```
 Our data consists of daily closing stock prices for twenty stocks and a large-cap index fund from Vanguard (VV). A summary and the first 6 rows of the data set are below.
 

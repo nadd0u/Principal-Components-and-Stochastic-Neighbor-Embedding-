@@ -2,11 +2,10 @@
 title: 'Principal Components (PCA) and Stochastic Neighbor Embedding
   (t-SNE)'
 author: "Nadia Noui-Mehidi"
-date: "10/2/2019"
 output:
-  word_document: default
-  pdf_document: default
-subtitle: MSDS 411
+  github_document: default
+  rmarkdown::github_documen: default
+  
 ---
 
 ```{r setup, include=FALSE}
